@@ -90,8 +90,7 @@ selecione una obcion del menu: ");
 
         private void Mostrar()
         {
-// Feature: Mostrar libros
-// Muestra todos los libros registrados
+
             var libros = controller.ObtenerTodos();
 
             foreach (var l in libros)
@@ -102,8 +101,7 @@ selecione una obcion del menu: ");
 
         private void Editar()
         {
-// Feature: Editar libro
-// Permite modificar los datos de un libro existente
+
             Console.Write("ID: ");
             int id = int.Parse(Console.ReadLine());
 
@@ -121,8 +119,7 @@ selecione una obcion del menu: ");
 
         private void Eliminar()
         {
-// Feature: Eliminar libro
-// Elimina un libro del sistema por su ID
+
             Console.Write("ID: ");
             int id = int.Parse(Console.ReadLine());
 
