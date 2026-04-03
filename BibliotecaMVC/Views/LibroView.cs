@@ -28,7 +28,8 @@ Menu:
 5.Salir
 ----------------------------------
 selecione una obcion del menu: ");
-                
+
+    
                 if (!int.TryParse(Console.ReadLine(), out int opcion))
                 {
                     Console.WriteLine("Opción inválida...");
@@ -69,7 +70,8 @@ selecione una obcion del menu: ");
 
         private void Agregar()
         {
-
+// Feature: Agregar libro
+// Permite al usuario registrar un nuevo libro en el sistema
             Console.WriteLine("*** Agregar Libro ***");
 
             Console.Write("Titulo: ");
@@ -88,6 +90,7 @@ selecione una obcion del menu: ");
 
         private void Mostrar()
         {
+
             var libros = controller.ObtenerTodos();
 
             foreach (var l in libros)
@@ -98,6 +101,7 @@ selecione una obcion del menu: ");
 
         private void Editar()
         {
+
             Console.Write("ID: ");
             int id = int.Parse(Console.ReadLine());
 
@@ -115,6 +119,7 @@ selecione una obcion del menu: ");
 
         private void Eliminar()
         {
+
             Console.Write("ID: ");
             int id = int.Parse(Console.ReadLine());
 
